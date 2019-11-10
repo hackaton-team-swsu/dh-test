@@ -11,6 +11,7 @@ namespace Swsu.GH.Main.Controllers
     {
         public ActionResult Index()
         {
+       
             return View();
         }
 
