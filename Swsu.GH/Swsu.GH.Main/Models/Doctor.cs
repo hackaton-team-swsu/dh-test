@@ -50,17 +50,17 @@ namespace Swsu.GH.Main.Models
         /// <summary>
         /// Время начала работы врача
         /// </summary>
-        public DateTime OpenTime { get; set; }
+        public DateTime? OpenTime { get; set; }
 
         /// <summary>
         /// Время окончания работы врача
         /// </summary>
-        public DateTime CloseTime { get; set; }
+        public DateTime? CloseTime { get; set; }
 
         /// <summary>
         /// Идентификатор больницы врача
         /// </summary>
-        public Guid HospitalId { get; set; }
+        public Guid? HospitalId { get; set; }
 
         /// <summary>
         /// Специализация врача
