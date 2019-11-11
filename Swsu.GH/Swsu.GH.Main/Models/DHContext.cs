@@ -14,5 +14,7 @@ namespace Swsu.GH.Main.Models
         public DHContext():base("HospitalContext") { }
 
         public DbSet<Hospital> Hospitals { get; set; }
+
+        public DbSet<Doctor> Doctors { get; set; }
     }
 }
