@@ -11,12 +11,19 @@ namespace Swsu.GH.Main.Controllers
     {
         public ActionResult Index()
         {
+            if (Session["isAuth"] == null)
+            {
+                Session["isAuth"] = false;
+            }
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Cabinet()
         {
-            ViewBag.Message = "Your application description page.";
+            if (!(bool)Session["isAuth"])
+            {
+                return Redirect("~/Account/Index");
+            }
 
             return View();
         }
