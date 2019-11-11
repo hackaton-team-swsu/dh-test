@@ -139,6 +139,7 @@
     <Compile Include="Models\Doctor.cs" />
     <Compile Include="Models\DHContext.cs" />
     <Compile Include="Models\Hospital.cs" />
+    <Compile Include="Models\Patient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -183,10 +184,11 @@
     <Content Include="Views\Home\Cabinet.cshtml" />
     <Content Include="Views\Account\Index.cshtml" />
     <Content Include="Views\Error\LogInError.cshtml" />
+    <Content Include="Views\Hospital\PatientInfo.cshtml" />
+    <Content Include="Views\Hospital\Registration.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Doctor\" />
-    <Folder Include="Views\Hospital\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
