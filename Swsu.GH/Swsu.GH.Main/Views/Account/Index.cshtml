@@ -1,0 +1,17 @@
+﻿@model Swsu.GH.Main.Models.Account
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+@using(Html.BeginForm("SignIn", "Account", FormMethod.Post))
+{
+    @Html.LabelFor(m => m.UserName);<br />
+    @Html.EditorFor(m => m.UserName);<br />
+    @Html.LabelFor(m => m.Password);<br />
+    @Html.EditorFor(m => m.Password);<br />
+    @Html.DropDownListFor(m => m.Role, ViewBag.Roles as SelectList);
+    <input type="submit" value="Отправить"/>
+}
