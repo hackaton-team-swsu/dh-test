@@ -1,0 +1,44 @@
+﻿@model Swsu.GH.Main.Models.Patient
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div>
+        <h3>Форма оформления записи на прием</h3>
+        @using (Html.BeginForm("PatientInfo", "Hospital", FormMethod.Post))
+        {
+            @Html.HiddenFor(m => m.Id)
+            @Html.LabelFor(m => m.Name)
+            <br />
+            @Html.TextBoxFor(m => m.Name)
+            <br />
+            @Html.LabelFor(m => m.Surname)
+            <br />
+            @Html.TextBoxFor(m => m.Surname)
+            <br />
+            @Html.LabelFor(m => m.Patronymic)
+            <br />
+            @Html.TextBoxFor(m => m.Patronymic)
+            <br />
+            @Html.LabelFor(m => m.BirthDate)
+            <br />
+            @Html.TextBoxFor(m => m.BirthDate)
+            <br />
+            @Html.LabelFor(m => m.PhoneNumber)
+            <br />
+            @Html.TextBoxFor(m => m.PhoneNumber)
+            <br />
+            @Html.LabelFor(m => m.PolicyNumber)
+            <br />
+            @Html.TextBoxFor(m => m.PolicyNumber)
+            <br />
+            @Html.LabelFor(m => m.SnilsNumber)
+            <br />
+            @Html.TextBoxFor(m => m.SnilsNumber)
+            <br />
+            @Html.LabelFor(m => m.Sex)
+            <br />
+            @Html.TextBoxFor(m => m.Sex)
+            <input type="submit" value="Продолжить" />
+        }
+    </div>

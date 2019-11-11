@@ -132,6 +132,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Patient.cs" />
     <Compile Include="Models\Doctor.cs" />
     <Compile Include="Models\DHContext.cs" />
     <Compile Include="Models\Hospital.cs" />
@@ -177,10 +178,10 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Hospital\PatientInfo.cshtml" />
+    <Content Include="Views\Hospital\Registration.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Hospital\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
