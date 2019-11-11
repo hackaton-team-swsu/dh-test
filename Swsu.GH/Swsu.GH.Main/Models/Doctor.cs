@@ -66,7 +66,9 @@ namespace Swsu.GH.Main.Models
         /// Специализация врача
         /// </summary>
         public string Type { get; set; }
-
-
+        /// <summary>
+        /// Ссылка на больницу, в которой находится врач
+        /// </summary>
+        public Hospital Hospital { get; set; }
     }
 }
