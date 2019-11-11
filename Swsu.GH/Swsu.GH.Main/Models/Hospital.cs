@@ -41,11 +41,11 @@ namespace Swsu.GH.Main.Models
         /// <summary>
         /// Время открытия больницы
         /// </summary>
-        public DateTime OpenTime { get; set; }
+        public DateTime? OpenTime { get; set; }
         /// <summary>
         /// Время закрытия больницы
         /// </summary>
-        public DateTime CloseTime { get; set; }
+        public DateTime? CloseTime { get; set; }
         /// <summary>
         /// ОГРН больницы
         /// </summary>
@@ -54,5 +54,13 @@ namespace Swsu.GH.Main.Models
         /// ИНН больницы
         /// </summary>
         public string INN { get; set; }
+        /// <summary>
+        /// Ссылка на докторов больницы
+        /// </summary>
+        public ICollection<Doctor> Doctors { get; set; }
+        public Hospital()
+        {
+            Doctors = new List<Doctor>();
+        }
     }
 }
